@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝓞𝓹𝓽𝓲𝓶𝓲𝔃𝓪 𝓽𝓾 𝓹𝓬</title>
+    <link rel="icon" href="/static/css/img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <style>
+        /* Fondo con un estilo gamer, simulando píxeles flotando */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background: #1e1e1e;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Fondo principal con gradientes y estilo oscuro */
+.gamer-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #8eff4c, #0039f4);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(miles-morales-en-spider-man-un-nuevo-universo-3490.jpg)
+}
+
+/* Efecto de píxeles flotando */
+.pixel {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation: pixelMovement 4s infinite;
+}
+
+.pixel:nth-child(odd) {
+    animation-duration: 5s;
+}
+
+.pixel:nth-child(even) {
+    animation-duration: 6s;
+}
+
+@keyframes pixelMovement {
+    0% {
+        top: 50%;
+        left: 50%;
+        transform: scale(0);
+    }
+    100% {
+        top: 0;
+        left: 100%;
+        transform: scale(1);
+    }
+}
+
+/* Estilo para el título con un toque de neón */
+.title {
+    font-size: 4em;
+    color: #00ff9d;
+    text-shadow: 0 0 15px #00ff9d, 0 0 25px #00ff9d;
+    margin-bottom: 30px;
+    animation: titleGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow {
+    0% {
+        text-shadow: 0 0 15px #00ff9d, 0 0 25px #00ff9d;
+    }
+    100% {
+        text-shadow: 0 0 30px #0400ff, 0 0 50px #ff00f5;
+    }
+}
+
+/* Botón con estilo gamer, efectos de luz */
+.button {
+    padding: 15px 30px;
+    background: #001aff;
+    color: white;
+    border: 2px solid #00ff9d;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #008cff;
+}
+
+.button:hover {
+    background: #00ff9d;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00ff88, 0 0 25px #00ff40;
+}
+
+/* Pantallas de dispositivos pequeños (móviles) */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5em; /* Reducir tamaño del título */
+        margin-bottom: 20px;
+    }
+
+    .button {
+        font-size: 1.2em; /* Reducir tamaño del botón */
+        padding: 12px 25px;
+    }
+
+    .pixel {
+        width: 8px;
+        height: 8px; /* Hacer los píxeles más pequeños en pantallas pequeñas */
+    }
+}
+
+/* Pantallas de dispositivos muy pequeños (móviles en modo retrato) */
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Reducir aún más el tamaño del título */
+    }
+
+    .button {
+        font-size: 1.1em;
+        padding: 10px 20px; /* Reducir el tamaño del botón */
+    }
+
+    .pixel {
+        width: 6px;
+        height: 6px; /* Hacer los píxeles aún más pequeños */
+    }
+}
+
+/* Pantallas de dispositivos grandes (escritorios) */
+@media (min-width: 1200px) {
+    .title {
+        font-size: 4em; /* Aumentar el tamaño del título en pantallas grandes */
+        margin-bottom: 50px;
+    }
+
+    .button {
+        font-size: 1.2em; /* Aumentar el tamaño del botón */
+        padding: 20px 40px;
+    }
+
+    .pixel {
+        width: 12px;
+        height: 12px; /* Aumentar tamaño de los píxeles en pantallas grandes */
+    }
+}
+
+    </style>
+    <main class="gamer-background">
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <h1 class="title">𝓑𝓲𝓮𝓷𝓿𝓮𝓷𝓲𝓭𝓸 𝓪 𝓞𝓹𝓽𝓲𝓶𝓲𝔃𝓪 𝓽𝓾 𝓹𝓬</h1>
+        <!-- Botón para ir a la página de inicio -->
+        <a href="tu.html" class="button">𝙄𝙧 𝙖 𝙡𝙖 𝙥á𝙜𝙞𝙣𝙖 𝙙𝙚 𝙞𝙣𝙞𝙘𝙞𝙤</a>
+    </main>
+</body>
+</html>
